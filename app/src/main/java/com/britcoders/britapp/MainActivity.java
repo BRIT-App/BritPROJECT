@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -40,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
         //Hooks
-        image = findViewByID(R.id.imageView);
-        logo = findViewByID(R.id.textView);
-        slogan = findViewByID(R.id.textView2);
+        image = findViewById(R.id.ImageView);
+        logo = findViewById(R.id.TextView);
+        slogan = findViewById(R.id.TextView2);
 
     }
 

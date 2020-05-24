@@ -1,4 +1,4 @@
-package com.britcoders.britapp.ui.notifications;
+package com.britcoders.splashscreen.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
