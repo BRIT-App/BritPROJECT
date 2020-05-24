@@ -1,4 +1,4 @@
-package com.britcoders.splashscreen.ui.dashboard;
+package com.britcoders.britapp.ui.dashboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
