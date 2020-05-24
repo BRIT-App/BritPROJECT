@@ -2,5 +2,6 @@
     <string name="app_name">BRIT App</string>
     <string name="splash_name">Bedford_App</string>
     <string name="greeting">Hello World!</string>
+    <string name="goodbye_button">Goodbye</string>
 
 </resources>
