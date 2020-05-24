@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SplashScreen</string>
+    <string name="app_name">BritApp</string>
 
     <!--  Bottom Bar  -->
     <string name="title_home">Home</string>
