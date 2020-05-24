@@ -1,6 +1,8 @@
 package com.britcoders.britapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -17,10 +19,12 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static int SPLASH_TIMER = 5000;
+
     //Variables
     Animation topAnim, bottomAnim;
-    ImageView image;
-    TextView logo, slogan;
+    ImageView backgroundImage;
+    TextView title, poweredByLine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +46,24 @@ public class MainActivity extends AppCompatActivity {
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
         //Hooks
-        image = findViewById(R.id.background_image);
-        logo = findViewById(R.id.title);
-        slogan = findViewById(R.id.powered_by_line);
+        backgroundImage = findViewById(R.id.background_image);
+        title = findViewById(R.id.title);
+        poweredByLine = findViewById(R.id.powered_by_line);
 
-        image.setAnimation(topAnim);
-        logo.setAnimation(bottomAnim);
-        slogan.setAnimation(bottomAnim);
+        backgroundImage.setAnimation(topAnim);
+        title.setAnimation(bottomAnim);
+        poweredByLine.setAnimation(bottomAnim);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run(){
+
+            Intent intent = new Intent(getApplicationContext(), UserDashboard.class);
+            startActivity(intent);
+            finish(); //destroy activity after running
+            //don not write anything else here
+            }
+        },SPLASH_TIMER);
+
     }
-
 }
