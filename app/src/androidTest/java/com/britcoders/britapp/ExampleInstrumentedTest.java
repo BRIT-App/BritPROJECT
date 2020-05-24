@@ -1,4 +1,4 @@
-package com.example.britapp;
+package com.britcoders.britapp;
 
 import android.content.Context;
 

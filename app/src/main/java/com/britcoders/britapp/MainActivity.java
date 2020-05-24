@@ -1,12 +1,10 @@
-package com.britcoders.splashscreen;
+package com.britcoders.britapp;
 
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
-import com.example.britapp.AppBarConfiguration;
-import com.example.britapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
