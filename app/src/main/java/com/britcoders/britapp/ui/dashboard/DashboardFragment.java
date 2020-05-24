@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.britcoders.splashscreen.R;
+import com.britcoders.britapp.R;
 
 public class DashboardFragment extends Fragment {
 

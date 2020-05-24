@@ -13,7 +13,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.britcoders.britapp.R;
-import com.britcoders.splashscreen.R;
 
 public class HomeFragment extends Fragment {
 
