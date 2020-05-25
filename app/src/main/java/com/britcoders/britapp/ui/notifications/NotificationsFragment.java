@@ -1,4 +1,4 @@
-package com.britcoders.splashscreen.ui.notifications;
+package com.britcoders.britapp.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,12 +16,12 @@ import com.britcoders.britapp.R;
 
 public class NotificationsFragment extends Fragment {
 
-    private com.britcoders.splashscreen.ui.notifications.NotificationsViewModel notificationsViewModel;
+    private NotificationsViewModel notificationsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =
-                ViewModelProviders.of(this).get(com.britcoders.splashscreen.ui.notifications.NotificationsViewModel.class);
+                ViewModelProviders.of(this).get(NotificationsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
